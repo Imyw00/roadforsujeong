@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FF0000" /> <!-- 버튼 배경색 설정 -->
+    <corners android:radius="0dp" /> <!-- 버튼의 모서리를 직각으로 설정 -->
+</shape>

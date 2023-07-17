@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#00ff0000" /> <!-- 배경색을 지정할 때는 'android:color'를 사용해야 합니다 -->
+
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- 선색을 지정할 때도 'android:color'를 사용해야 합니다 -->
+
+    <corners
+        android:radius="0dp" /> <!-- 휘는각도를 지정할 때는 'android:radius'를 사용해야 합니다 -->
+
+</shape>
