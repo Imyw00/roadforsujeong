@@ -1,4 +1,4 @@
-package com.example.start_screen;
+package com.example.Start_Screen;
 
 import android.content.Context;
 

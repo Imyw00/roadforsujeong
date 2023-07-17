@@ -18,7 +18,7 @@ public class RealRevw extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_foodmap);
+        setContentView(R.layout.activity_realrevw);
 
         list_sample=(ListView) findViewById(R.id.list_sample);
 

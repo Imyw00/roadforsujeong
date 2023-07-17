@@ -4,6 +4,11 @@
     <!-- 인터넷 권한 선언 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="31"
+        tools:overrideLibrary="com.google.android.gms.maps" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -45,6 +50,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCcNQ_3oAwK5z-ooastxe-qEO_2o0vc_6I" />
+
 
 
     </application>
