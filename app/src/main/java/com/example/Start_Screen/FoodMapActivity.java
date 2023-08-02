@@ -29,13 +29,22 @@ public class FoodMapActivity extends AppCompatActivity implements OnMapReadyCall
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng location = new LatLng(37.5913, 127.0221);
-        MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.title("성신여대");
-        markerOptions.snippet("학교");
-        markerOptions.position(location);
-        googleMap.addMarker(markerOptions);
+        LatLng location1 = new LatLng(37.5913, 127.0221);
+        MarkerOptions markerOptions1 = new MarkerOptions();
+        markerOptions1.title("성신여대");
+        markerOptions1.snippet("학교");
+        markerOptions1.position(location1);
+        googleMap.addMarker(markerOptions1);
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 16));
+        LatLng location2 = new LatLng( 37.59180699674069, 127.01848170470035);
+        MarkerOptions markerOptions2 = new MarkerOptions();
+        markerOptions2.title("제순식당");
+        markerOptions2.snippet("한식");
+        markerOptions2.position(location2);
+        googleMap.addMarker(markerOptions2);
+
+        LatLng centerLocation = new LatLng((location1.latitude + location2.latitude) / 2,
+                (location1.longitude + location2.longitude) / 2);
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(centerLocation, 14));
     }
 }
