@@ -1,3 +1,8 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">Start_Screen</string>
+    <string-array name="categories_array">
+        <item>한식</item>
+        <item>중식</item>
+        <item>일식</item>
+    </string-array>
 </resources>

@@ -60,6 +60,10 @@
             android:name=".rvAdapter"
             android:exported="false" />
 
+        <activity
+            android:name=".WriteReviewActivity"
+            android:exported="false" />
+
 
 
 
