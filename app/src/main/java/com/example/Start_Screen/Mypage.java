@@ -20,6 +20,8 @@ public class Mypage extends AppCompatActivity {
     private ImageButton btn_back;
     private EditText et_name, et_student_id, et_nickname;
     private Button button3;
+    private Button button;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,9 @@ public class Mypage extends AppCompatActivity {
         et_name = findViewById(R.id.et_name);
         et_student_id = findViewById(R.id.et_student_id);
         et_nickname = findViewById(R.id.et_nickname);
+        button = findViewById(R.id.button);
         button3 = findViewById(R.id.button3);
+        button2 = findViewById(R.id.button2);
 
         Intent intent = getIntent();
         String userName = intent.getStringExtra("userName");
@@ -48,7 +52,7 @@ public class Mypage extends AppCompatActivity {
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String url = "https://www.sungshin.ac.kr/sites/main_kor/main.jsp";
@@ -56,6 +60,28 @@ public class Mypage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to LoginActivity
+                Intent intent = new Intent(Mypage.this, LoginActivity.class);
+                startActivity(intent);
+
+                // Finish the current activity to prevent going back to it
+                finish();
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://open.kakao.com/o/slmFB1Af";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
 
         et_name.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
