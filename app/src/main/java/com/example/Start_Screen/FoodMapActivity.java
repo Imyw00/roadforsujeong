@@ -54,6 +54,7 @@ public class FoodMapActivity extends AppCompatActivity implements OnMapReadyCall
     private LocationRequest locationRequest;
     private LocationCallback locationCallback;
     private EditText etSearch;
+    private ImageButton btnMyLocation;
 
     private boolean isInitialLocation = true;
 
@@ -71,7 +72,7 @@ public class FoodMapActivity extends AppCompatActivity implements OnMapReadyCall
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
-        ImageButton btnMyLocation = findViewById(R.id.btnMyLocation);
+        btnMyLocation = findViewById(R.id.btnMyLocation);
         btnMyLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -182,7 +183,6 @@ public class FoodMapActivity extends AppCompatActivity implements OnMapReadyCall
             }
         });
 
-        // 현재 위치 버튼 클릭 이벤트 처리
         // 현재 위치 버튼 클릭 이벤트 처리
         googleMap.setOnMyLocationButtonClickListener(new GoogleMap.OnMyLocationButtonClickListener() {
             @Override

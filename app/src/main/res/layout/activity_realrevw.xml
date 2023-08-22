@@ -11,7 +11,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="후기를 입력하고 싶다면 쓰고자 하는 음식의 카테고리를 분류한 후 \n              스페이스 바를 누르고 이동 버튼을 눌러주세요" />
+        android:text="        후기를 입력하고 싶다면 쓰고자 하는 음식의 카테고리를 \n                          분류한 후 이동 버튼을 눌러주세요" />
 
     <Button
         android:id="@+id/submitReviewButton"
